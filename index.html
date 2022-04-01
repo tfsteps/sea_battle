@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@font-face{
+		font-family: main;
+		src: url(2.ttf);
+		}
+
+
+		.main {
+			
+			width: 550px;
+			background: white;
+			left: 480px;
+			text-align: center;
+			opacity: 70%;
+			position: absolute;
+			top: 100px;
+		}
+
+		.gorizontal {
+			height: 47px;
+			width: 550px;
+			background: none;
+			border: 1px solid #812c77;
+
+			display: flex;
+		}
+
+		.s {
+			height: 47px;
+			width: 50px;
+			background: none;
+			border: 1px solid #812c77;
+			transition: 2s;
+		}
+
+		.none {
+			background: none;
+			width: 50px;
+			height: 47px;
+			font-size: 26px;
+			margin-top: 10px;
+		}
+
+		.miss {
+			background: none;
+		}
+
+		.lead {
+			background: none;
+
+		}
+
+		.h {
+			margin-top: 20px;
+			margin-left: 100px;
+		}
+
+		.body {
+			padding: 0;
+			margin: 0;
+			background-image: url(bg.jpg);
+			background-size: cover;
+			font-family: main;
+			color: #77154d;
+		}
+
+		.p {
+			margin-left: 100px;
+			margin-top: -9px;
+		}
+
+	</style>
+</head>
+<body class="body">
+
+<h2 class="h">Морской бой :)</h2>
+<h3 class="p k4">Объект с 4 клетками -<span class="score4"> 1</span></h3>
+<h3 class="p k3">Объекты с 3 клетками -<span class="score3"> 2</span></h3>
+<h3 class="p k2">Объекты с 2 клетками -<span class="score2"> 3</span></h3>
+<h3 class="p k1">Объекты с 1 клеткой -<span class="score1"> 4</span></h3>
+
+<div class="lead">
+	
+	<div class="main">
+		<div class="gorizontal">
+			<div class=" none"></div>
+			<div class=" none">A</div>
+			<div class=" none">B</div>
+			<div class=" none">C</div>
+			<div class=" none">D</div>
+			<div class=" none">E</div>
+			<div class=" none">F</div>
+			<div class=" none">G</div>
+			<div class=" none">H</div>
+			<div class=" none">I</div>
+			<div class=" none">J</div>
+		</div>
+		<div class="gorizontal">
+			<div class="none">1</div>
+			<div class="s miss"></div>
+			<div class="s region2"></div>
+			<div class="s region2"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region2"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region3"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">2</div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region2"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region3"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">3</div>
+			<div class="s region1"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region3"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">4</div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region1"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+		</div>
+		<div class="gorizontal">
+			<div class="none">5</div>
+			<div class="s region3"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region1"></div>
+			<div class="s miss"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">6</div>
+			<div class="s region3"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">7</div>
+			<div class="s region3"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s region2"></div>
+			<div class="s region2"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">8</div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">9</div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s  region4"></div>
+			<div class="s  region4"></div>
+			<div class="s  region4"></div>
+			<div class="s  region4"></div>
+			<div class="s miss"></div>
+		</div>
+		<div class="gorizontal">
+			<div class=" none">10</div>
+			<div class="s miss"></div>
+			<div class="s region1"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+			<div class="s miss"></div>
+		</div>
+		
+	</div>
+
+</div>	
+
+<script type="text/javascript">
+	let miss = document.querySelectorAll(".miss");
+	let r1 = document.querySelectorAll(".region1");
+	let r2 = document.querySelectorAll(".region2");
+	let r3 = document.querySelectorAll(".region3");
+	let r4 = document.querySelectorAll(".region4");
+	let score = 0;
+	let reg1 = 0;
+	let reg2 = 0;
+	let reg3 = 0;
+	let reg4 = 0;
+	let ship1 = 4;
+	let ship2 = 6;
+	let ship3 = 6;
+	let ship4 = 4;
+	
+
+	for(let i=0; i<80; i=i+1){
+		miss[i].onclick = function(){
+			miss[i].style.backgroundImage = "url(miss.png)";
+			miss[i].style.backgroundSize = "100% 100%";
+		}
+	}
+
+
+	for(let i=0; i<4; i=i+1){
+		r1[i].onclick = function(){
+			r1[i].style.background = "#ff80bf";
+			score = score + 1;
+			reg1 = reg1 + 1;
+			ship1 = ship1 - 1;
+			document.querySelector('.score1').innerHTML = ship1;
+
+			if (reg1 == 4) {
+				document.querySelector(".k1").style.textDecoration = "line-through";
+			}
+
+			if (score == 20) {
+				document.querySelector(".body").style.display = "none";
+				alert("You win :D!");
+			}
+			
+		}
+	}
+
+
+	for(let i=0; i<6; i=i+1){
+		r2[i].onclick = function(){
+			r2[i].style.background = "#a80e4e";
+			score = score + 1;
+			reg2 = reg2 + 1;
+			ship2 = ship2 - 1;
+			
+
+			if (reg2 == 6) {
+				document.querySelector(".k2").style.textDecoration = "line-through";
+			}
+
+			if (ship2 == 4) {
+				document.querySelector('.score2').innerHTML = "2";
+			}
+
+			if (ship2 == 2) {
+				document.querySelector('.score2').innerHTML = "1";
+			}
+
+			if (ship2 == 0) {
+				document.querySelector('.score2').innerHTML = "0";
+			}
+
+			if (score == 20) {
+				document.querySelector(".body").style.display = "none";
+				alert("You win :D!");
+			}
+
+
+			
+		}
+	}
+
+
+	for(let i=0; i<6; i=i+1){
+		r3[i].onclick = function(){
+			r3[i].style.background = "#993399";
+			score = score + 1;
+			reg3 = reg3 + 1;
+			ship3 = ship3 - 1;
+			
+
+			if (reg3 == 6) {
+				document.querySelector(".k3").style.textDecoration = "line-through";
+			}
+			
+			if (ship3 == 3) {
+				document.querySelector('.score3').innerHTML = "1";
+			}
+
+			if (ship3 == 0) {
+				document.querySelector('.score3').innerHTML = "0";
+			}
+
+			if (score == 20) {
+				document.querySelector(".body").style.display = "none";
+				alert("You win :D!");
+			}
+		}
+	}
+
+	for(let i=0; i<4; i=i+1){
+		r4[i].onclick = function(){
+			r4[i].style.background = "#660066";
+			score = score + 1;
+			reg4 = reg4 + 1;
+			ship4 = ship4 - 1;
+
+
+			if (reg4 == 4) {
+				document.querySelector(".k4").style.textDecoration = "line-through";
+			}
+
+			if (ship4 == 0) {
+				document.querySelector('.score4').innerHTML = "0";
+			}
+
+			if (score == 20) {
+				document.querySelector(".body").style.display = "none";
+				alert("You win :D!");
+			}
+			
+		}
+	}
+</script>
+</body>
+</html>
